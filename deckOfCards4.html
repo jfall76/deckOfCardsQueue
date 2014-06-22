@@ -117,6 +117,11 @@ function Card(rank, suit) {
 	}
 }
 
+var score_1 = 0;
+var score_2 = 0;
+var tie = 0;
+var card_dealt;
+
 d = new Deck;
 d.init();
 p1 = new Queue;
@@ -124,11 +129,6 @@ p2 = new Queue;
 
 //create 2 players and deal them each 26 cards
 d.deal(p1,p2);
-
-var score_1 = 0;
-var score_2 = 0;
-var tie = 0;
-var card_dealt;
 
 while (p1.count() > 0 && p2.count() > 0) {
 	console.log("Player 1 Hand: ");
