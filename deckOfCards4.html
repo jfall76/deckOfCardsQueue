@@ -31,13 +31,6 @@ function Queue() {
 	this.count = function() {
 		return this.queue.length;
 	}
-	this.toString = function() {
-		var retStr = "";
-		for (var i = 0; i < this.queue.length; ++i) {
-		retStr += this.queue[i].rank + "\n";
-		}
-		return retStr;
-	}
 }
 
 function Deck() {
